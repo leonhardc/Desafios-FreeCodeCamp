@@ -1,0 +1,113 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tribute Page | FreeCodeCamp</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header></header>
+    <main id="main">
+      <h1 id="title">Isaac Newton</h1>
+      <div id="img-div">
+        <img id="image" src="https://www.oficinadanet.com.br/imagens/post/15839/capa.jpg" alt="Isaac Newton Image"></img>
+        <figcaption id="img-caption">Isaac Newton</figcaption>
+      </div>
+      <div class="resumo">
+        <p id="tribute-info" >
+          Isaac Newton foi um matemático, físico, astrônomo, teólogo e autor inglês que é amplamente reconhecido como um dos cientistas mais influentes de todos os tempos e como uma figura-chave na Revolução Científica. Seu livro Philosophiæ Naturalis Principia Mathematica (Princípios Matemáticos da Filosofia Natural), publicado pela primeira vez em 1687, lançou as bases da mecânica clássica. Newton também fez contribuições seminais à óptica e compartilha crédito com Gottfried Wilhelm Leibniz pelo desenvolvimento do cálculo infinitesimal.   
+        </p>
+      </div>
+      <div class="contrib">
+        <p> Isaac Newton teve contribuições importantes nas mais diversas áreas, dentre elas:</p>
+        <div>
+          <ul>
+            <li> <span class="bold">Matemática</span>
+              <p class="content">(...)
+                Newton é geralmente creditado com o teorema binomial generalizado, válido para qualquer expoente. Descobriu as identidades de Newton, o método de Newton, classificou as curvas do plano cúbico (polinômios de três graus em duas variáveis), fez contribuições substanciais à teoria das diferenças finitas e foi o primeiro a usar índices fracionários e a empregar geometria analítica para derivar soluções para as equações diofantinas. Aproximou somas parciais da série harmônica por logaritmos (um precursor da fórmula de soma de Euler) e foi o primeiro a usar as séries de potência. O trabalho de Newton em séries infinitas foi inspirado nos decimais de Simon Stevin. 
+                (...)</p></li>
+            <li> <span class="bold">Óptica</span>
+              <p class="content">(...)
+                De 1670 a 1672, Newton deu palestras sobre óptica.[36] Durante esse período investigou a refração da luz, demonstrando que o espectro multicolorido produzido por um prisma poderia ser recomposto em luz branca por uma lente e um segundo prisma.[37] Estudos modernos revelaram que a análise e ressíntese da luz branca de Newton devem uma dívida à alquimia corpuscular.
+
+Mostrou que a luz colorida não altera suas propriedades separando um feixe colorido e brilhando-o em vários objetos e que, independentemente de refletida, dispersa ou transmitida, a luz permanece da mesma cor. Assim, ele observou que a cor é o resultado de objetos que interagem com a luz já colorida, em vez de objetos gerando a própria cor. Isso é conhecido como teoria da cor de Newton.
+            (...)</p></li>
+            <li> <span class="bold">Mecânica e gravitação</span>
+              <p class="content">(...)
+                Em 1679, Newton voltou ao seu trabalho sobre mecânica celeste, considerando a gravitação e seu efeito nas órbitas dos planetas, com referência às leis de Kepler. Isto foi estimulado por uma breve troca de cartas entre 1679 a 1680 com Hooke, nomeado para administrar a correspondência da Royal Society, e que abriu uma correspondência destinada a obter contribuições de Newton para as transações da Royal Society. O interesse de Newton em assuntos astronômicos recebeu mais estímulos pelo aparecimento de um cometa no inverno de 1680-1681, enquanto se correspondia com John Flamsteed.[48] Após as trocas com Hooke, Newton descobriu que a forma elíptica das órbitas planetárias resultaria de uma força centrípeta inversamente proporcional ao quadrado do vetor do raio. Newton comunicou seus resultados a Edmond Halley e à Royal Society em De motu corporum in gyrum, um folheto escrito em cerca de nove folhas que foram copiadas no Livro de Registro da Royal Society em dezembro de 1684.
+                (...)</p></li>
+          </ul>
+        </div>
+        <p class="p-link"> Se tiver mais curiosidade para de aprofundar na vida e história de Isaac Newton <a href="https://pt.wikipedia.org/wiki/Isaac_Newton" id="tribute-link" target="_blank">Clique aqui para saber mais.</a></p>
+      </div>
+    </main>
+  </body>
+  <footer></footer>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: #C0C0C0; 
+  font-family: Arial, Helvetica, sans-serif; 
+}
+div {
+  margin: 10px;
+  border: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  
+}
+
+#tribute-info {
+  padding: 10px;
+}
+
+div img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+img {
+  display: block;
+
+}
+
+
+#image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+#title {
+   text-align: center;
+   padding-top: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+.p-link {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+** end of undefined **
+
