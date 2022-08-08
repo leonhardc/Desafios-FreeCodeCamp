@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Documentação</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#Introducao">Introducao</a></li>
+            <li><a href="#Interpretador_python">Interpretador Python</a></li>
+            <li><a href="#Ferramentas_de_controle_de_fluxo">Ferramentas de Controle de Fluxo</a></li>
+            <li><a href="#Estruturas_de_dados">Estruturas de Dados</a></li>
+            <li><a href="#Modulos">Modulos</a></li>
+            <li><a href="#Classes">Classes</a></li>
+            <li><a href="#Referencias">Referencias</a></li>
+        </ul>      
+    </nav>
+    <main id="main-doc">
+
+        <!-- Section 1-->
+        <section class="main-section" id="Introducao"> 
+            <header>Introdução</header>
+            <p>
+                Python é uma linguagem fácil de aprender e poderosa. 
+                Ela tem estruturas de dados de alto nível eficientes e uma 
+                abordagem simples mas efetiva de programação orientada a 
+                objetos. A elegância de sintaxe e a tipagem dinâmica de 
+                Python aliadas com sua natureza interpretativa, o fazem a 
+                linguagem ideal para programas e desenvolvimento de aplicações 
+                rápidas em diversas áreas e na maioria das plataformas.
+            </p>
+            <p>
+                Este tutorial introduz informalmente o leitor aos conceitos 
+                básicos e aos recursos da linguagem e do sistema Python. É 
+                mais fácil se você possuir um interpretador Python para uma 
+                experiência prática, mas os exemplos são autossuficientes e, 
+                portanto, o tutorial pode apenas ser lido off-line também.
+            </p>
+            <div class="items">
+                <ol>
+                    <li>1. <a href="#Interpretador_python">Interpretador Python</a></li>
+                    <li>2. <a href="#Ferramentas_de_controle_de_fluxo">Ferramentas de Controle de Fluxo</a></li>
+                    <li>3. <a href="#Estruturas_de_dados">Estruturas de Dados</a></li>
+                    <li>4. <a href="#Modulos">Módulos</a></li>
+                    <li>5. <a href="#Classes">Classes</a></li>
+                    <li>6. <a href="#Referencias">Referencias</a></li>
+                </ol>
+            </div>
+        </section> 
+        <!-- Fim - Section 1-->
+        
+        <!-- Section 2-->
+        <section class="main-section" id="Interpretador_python"> 
+            <header>1. Interpretador Python</header>
+            <p>
+                O interpretador Python é frequentemente instalado como 
+                /usr/local/bin/python3.10 nas máquinas onde está disponível; 
+                adicionando /usr/local/bin ao caminho de busca da shell de 
+                seu Unix torna-se possível iniciá-lo digitando o comando:
+            </p>
+            <p>
+                Em máquinas Windows onde você instalou Python a partir da 
+                Microsoft Store, o comando python3.10 estará disponível. 
+                Se você tem o lançador py.exe instalado, você pode usar o 
+                comando py. 
+            </p>
+            <p>
+                O interpretador trabalha de forma semelhante a uma shell de Unix: 
+                quando chamado com a saída padrão conectada a um console de 
+                terminal, ele lê e executa comandos interativamente; quando 
+                chamado com um nome de arquivo como argumento, ou com 
+                redirecionamento da entrada padrão para ler um arquivo, o 
+                interpretador lê e executa o script contido no arquivo.
+            </p>
+        </section>
+        <!-- Fim - Section 2-->
+
+        <!-- Section 3-->
+        <section class="main-section" id="Ferramentas_de_controle_de_fluxo">
+            <header>2. Ferramentas de Controle de Fluxo</header>
+            <p>
+                Python tem as estruturas usuais de controle de fluxo conhecidas em 
+                outras linguagens, com algumas particulares.
+            </p>
+            <div>
+                <h3>Comando if</h3>
+                <p>
+                    Provavelmente o mais conhecido comando 
+                    de controle de fluxo é o if. Por exemplo:
+                </p>
+                <code>
+                    >>> x = int(input("Please enter an integer: ")) <br>
+                    Please enter an integer: 42 <br>
+                    >>> if x < 0: <br>
+                    ...     x = 0 <br>
+                    ...     print('Negative changed to zero') <br>
+                    ... elif x == 0: <br>
+                    ...     print('Zero') <br>
+                    ... elif x == 1: <br>
+                    ...     print('Single') <br>
+                    ... else: <br>
+                    ...     print('More') <br>
+                    ... <br>
+                </code>
+                <p>
+                    Pode haver zero ou mais partes elif, e a parte else é opcional. 
+                    A palavra-chave ‘elif’ é uma abreviação para ‘else if’, e é útil 
+                    para evitar indentação excessiva. Uma sequência if … elif … 
+                    elif … substitui os comandos switch ou case, encontrados em 
+                    outras linguagens.
+                </p>
+            </div>
+
+            <div>
+                <h3>Comando for</h3>
+                <p>
+                    O comando for em Python é um pouco diferente do que costuma 
+                    ser em C ou Pascal. Ao invés de sempre iterar sobre uma 
+                    progressão aritmética de números (como no Pascal), ou 
+                    permitir ao usuário definir o passo de iteração e a condição 
+                    de parada (como C), o comando for do Python itera sobre os 
+                    itens de qualquer sequência (seja uma lista ou uma string), 
+                    na ordem que aparecem na sequência. Por exemplo:
+                </p>
+                <code>
+                    >>> # Measure some strings: <br>
+                    ... words = ['cat', 'window', 'defenestrate'] <br>
+                    >>> for w in words: <br>
+                    ...     print(w, len(w)) <br>
+                    ... <br>    
+                </code>
+            </div>
+
+            <div>
+                <h3>Comando range()</h3>
+                <p>
+                    Se você precisa iterar sobre sequências numéricas, a função 
+                    embutida range() é a resposta. Ela gera progressões 
+                    aritméticas:
+                </p>
+                <code>
+                    >>> for i in range(5): <br>
+                    ...     print(i) <br>
+                    ... <br>
+                    0 <br>
+                    1 <br>
+                    2 <br>
+                    3 <br>
+                    4 <br>
+                </code>
+                <p>
+                    O ponto de parada fornecido nunca é incluído na lista; 
+                    range(10) gera uma lista com 10 valores, exatamente os 
+                    índices válidos para uma sequência de comprimento 10.
+                </p>
+            </div>
+            <div>
+                <h3>Definindo Funções</h3>
+                <p>
+                    Podemos criar uma função que escreve a série de Fibonacci até 
+                    um limite arbitrário:
+                </p>
+                <code>
+                    >>> def fib(n):    # write Fibonacci series up to n <br>
+                    ...     """Print a Fibonacci series up to n.""" <br>
+                    ...     a, b = 0, 1 <br>
+                    ...     while a < n: <br>
+                    ...         print(a, end=' ') <br>
+                    ...         a, b = b, a+b <br>
+                    ...     print() <br>
+                    ...
+                    >>> # Now call the function we just defined: <br>
+                    ... fib(2000) <br>
+                    0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 <br>
+                </code>
+                <p>
+                    A palavra reservada def inicia a definição de uma função. 
+                    Ela deve ser seguida do nome da função e da lista de parâmetros
+                     formais entre parênteses. Os comandos que formam o corpo da 
+                     função começam na linha seguinte e devem ser indentados.
+                </p>
+            </div>
+        </section> 
+        <!-- Fim - Section 3-->
+
+        <!-- Section 4-->
+        <section class="main-section" id="Estruturas_de_dados">
+            <header>3. Estruturas de Dados</header>
+            <p>
+                Dentro da linguagem de programação python existem diversas estruturas
+                de dados. Iremos abordar resumidamente Listas, Tuplas, Conjuntos ou Sets e
+                Dicioonários.
+            </p>
+            <div>
+                <h3>Listas</h3>
+                <p>
+                    Um exemplo que usa a maior parte dos métodos das listas:
+                </p>
+                <code>
+                    >>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana'] <br>
+                    >>> fruits.count('apple') <br>
+                    2 <br>
+                    >>> fruits.count('tangerine') <br>
+                    0 <br>
+                    >>> fruits.index('banana') <br>
+                    3 <br>
+                    >>> fruits.index('banana', 4)  # Find next banana starting a position 4 <br>
+                    6 <br>
+                    >>> fruits.reverse() <br>
+                    >>> fruits <br>
+                    ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange'] <br>
+                    >>> fruits.append('grape') <br>
+                    >>> fruits <br>
+                    ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape'] <br>
+                    >>> fruits.sort() <br>
+                    >>> fruits <br>
+                    ['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear'] <br>
+                    >>> fruits.pop() <br>
+                    'pear' <br>
+                </code>
+            </div>
+            <div>
+                <h3>Tuplas</h3>
+                <p>
+                    Vimos que listas e strings têm muitas propriedades em comum, como indexação 
+                    e operações de fatiamento. Elas são dois exemplos de sequências (veja Tipos 
+                    sequências — list, tuple, range). Como Python é uma linguagem em evolução, 
+                    outros tipos de sequências podem ser adicionados. Existe ainda um outro tipo 
+                    de sequência padrão na linguagem: a tupla.
+                </p>
+                <p>
+                    Uma tupla consiste em uma sequência de valores separados por vírgulas, 
+                    por exemplo:
+                </p>
+                <code>
+                    >>> t = 12345, 54321, 'hello!' <br>
+                    >>> t[0] <br>
+                    12345 <br>
+                    >>> t <br>
+                    (12345, 54321, 'hello!') <br>
+                    >>> # Tuples may be nested: <br>
+                    ... u = t, (1, 2, 3, 4, 5) <br>
+                    >>> u <br>
+                    ((12345, 54321, 'hello!'), (1, 2, 3, 4, 5)) <br>
+                    >>> # Tuples are immutable: <br>
+                    ... t[0] = 88888 <br>
+                    Traceback (most recent call last): <br>
+                    File "<stdin>", line 1, in <module> <br>
+                    TypeError: 'tuple' object does not support item assignment <br>
+                    >>> # but they can contain mutable objects: <br>
+                    ... v = ([1, 2, 3], [3, 2, 1]) <br>
+                    >>> v <br>
+                    ([1, 2, 3], [3, 2, 1]) <br>
+                </code>
+                <p>
+                    Como você pode ver no trecho acima, na saída do console as tuplas são sempre 
+                    envolvidas por parênteses, assim tuplas aninhadas podem ser lidas corretamente.
+                    Na criação, tuplas podem ser envolvidas ou não por parênteses, 
+                    desde que o contexto não exija os parênteses (como no caso da tupla 
+                    dentro de uma expressão maior). Não é possível atribuir itens individuais 
+                    de uma tupla, contudo é possível criar tuplas que contenham objetos mutáveis, 
+                    como listas.
+                </p>
+            </div>
+            <div>
+                <h3>Conjuntos</h3>
+                <p>
+                    Python também inclui um tipo de dados para conjuntos, chamado set. 
+                    Um conjunto é uma coleção desordenada de elementos, sem elementos 
+                    repetidos. Usos comuns para conjuntos incluem a verificação eficiente 
+                    da existência de objetos e a eliminação de itens duplicados. Conjuntos 
+                    também suportam operações matemáticas como união, interseção, diferença 
+                    e diferença simétrica.
+                </p>
+                <p>
+                    Chaves ou a função set() podem ser usados para criar conjuntos. Note: 
+                    para criar um conjunto vazio você precisa usar set(), não {}; este 
+                    último cria um dicionário vazio, uma estrutura de dados que discutiremos 
+                    na próxima seção.
+                </p>
+                <p>
+                    Uma pequena demonstração:
+                </p>
+                <code>
+                    >>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'} <br>
+                    >>> print(basket)                      # show that duplicates have been removed <br>
+                    {'orange', 'banana', 'pear', 'apple'} <br>
+                    >>> 'orange' in basket                 # fast membership testing <br>
+                    True <br>
+                    >>> 'crabgrass' in basket <br>
+                    False <br>
+
+                    >>> # Demonstrate set operations on unique letters from two words <br>
+                    ... <br>
+                    >>> a = set('abracadabra') <br>
+                    >>> b = set('alacazam') <br>
+                    >>> a                                  # unique letters in a <br>
+                    {'a', 'r', 'b', 'c', 'd'} <br>
+                    >>> a - b                              # letters in a but not in b <br>
+                    {'r', 'd', 'b'} <br>
+                    >>> a | b                              # letters in a or b or both <br>
+                    {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'} <br>
+                    >>> a & b                              # letters in both a and b <br>
+                    {'a', 'c'} <br>
+                    >>> a ^ b                              # letters in a or b but not both <br>
+                    {'r', 'd', 'b', 'm', 'z', 'l'} <br>
+                </code>
+            </div>
+            <div>
+                <h3>Dicioonários</h3>
+                <p>
+                    Outra estrutura de dados muito útil embutida em Python é o 
+                    dicionário, cujo tipo é dict (ver Tipo mapeamento — dict). 
+                    Dicionários são também chamados de “memória associativa” ou 
+                    “vetor associativo” em outras linguagens. Diferente de 
+                    sequências que são indexadas por inteiros, dicionários 
+                    são indexados por chaves (keys), que podem ser de qualquer 
+                    tipo imutável (como strings e inteiros). Tuplas também podem 
+                    ser chaves se contiverem apenas strings, inteiros ou outras 
+                    tuplas. Se a tupla contiver, direta ou indiretamente, qualquer
+                    valor mutável, não poderá ser chave. Listas não podem ser 
+                    usadas como chaves porque podem ser modificadas internamente 
+                    pela atribuição em índices ou fatias, e por métodos como 
+                    append() e extend().
+                </p>
+                <p>
+                    Um bom modelo mental é imaginar um dicionário como um 
+                    conjunto não-ordenado de pares chave:valor, onde as chaves 
+                    são únicas em uma dada instância do dicionário. Dicionários 
+                    são delimitados por chaves: {}, e contém uma lista de pares 
+                    chave:valor separada por vírgulas. Dessa forma também será 
+                    exibido o conteúdo de um dicionário no console do Python. O 
+                    dicionário vazio é {}.
+                </p>
+                <p>
+                    As principais operações em um dicionário são armazenar e 
+                    recuperar valores a partir de chaves. Também é possível 
+                    remover um par chave:valor com o comando del. Se você 
+                    armazenar um valor utilizando uma chave já presente, o 
+                    antigo valor será substituído pelo novo. Se tentar recuperar 
+                    um valor usando uma chave inexistente, será gerado um erro.
+                </p>
+                <p>
+                    Executar list(d) em um dicionário devolve a lista de todas 
+                    as chaves presentes no dicionário, na ordem de inserção 
+                    (se desejar ordená-las basta usar a função sorted(d)). 
+                    Para verificar a existência de uma chave, use o operador in.
+                </p>
+                <code>
+                    >>> tel = {'jack': 4098, 'sape': 4139} <br>
+                    >>> tel['guido'] = 4127 <br>
+                    >>> tel <br>
+                    {'jack': 4098, 'sape': 4139, 'guido': 4127} <br>
+                    >>> tel['jack'] <br>
+                    4098 <br>
+                    >>> del tel['sape'] <br>
+                    >>> tel['irv'] = 4127 <br>
+                    >>> tel <br>
+                    {'jack': 4098, 'guido': 4127, 'irv': 4127} <br>
+                    >>> list(tel) <br>
+                    ['jack', 'guido', 'irv'] <br>
+                    >>> sorted(tel) <br>
+                    ['guido', 'irv', 'jack'] <br>
+                    >>> 'guido' in tel <br>
+                    True <br>
+                    >>> 'jack' not in tel <br>
+                    False <br>
+                </code>
+            </div>
+        </section> 
+        <!-- Fim - Section 4-->
+
+        <!-- Section 5-->
+        <section class="main-section" id="Modulos">
+            <header>4. Modulos</header>
+            <p>
+                Ao sair e entrar de novo no interpretador Python, as definições 
+                anteriores (funções e variáveis) são perdidas. Portanto, 
+                se quiser escrever um programa maior, será mais eficiente 
+                usar um editor de texto para preparar as entradas para o 
+                interpretador, e executá-lo usando o arquivo como entrada. 
+                Isso é conhecido como criar um script. Se o programa se torna 
+                ainda maior, é uma boa prática dividi-lo em arquivos menores, 
+                para facilitar a manutenção. Também é preferível usar um arquivo 
+                separado para uma função que você escreveria em vários programas 
+                diferentes, para não copiar a definição de função em cada um deles.
+            </p>
+            <p>
+                Para permitir isso, o Python tem uma maneira de colocar as 
+                definições em um arquivo e então usá-las em um script ou em 
+                uma execução interativa do interpretador. Tal arquivo é chamado 
+                de módulo; definições de um módulo podem ser importadas para 
+                outros módulos, ou para o módulo principal (a coleção de variáveis 
+                a que você tem acesso num script executado como um programa e no 
+                modo calculadora).
+            </p>
+            <p>
+                Um módulo é um arquivo contendo definições e instruções Python. 
+                O nome do arquivo é o nome do módulo acrescido do sufixo .py. 
+                Dentro de um módulo, o nome do módulo (como uma string) está 
+                disponível como o valor da variável global __name__. Por exemplo, 
+                use seu editor de texto favorito para criar um arquivo chamado 
+                fibo.py no diretório atual com o seguinte conteúdo:
+            </p>
+            <code>
+                # Fibonacci numbers module <br>
+
+                def fib(n):    # write Fibonacci series up to n <br>
+                <div class="tab">                
+                    a, b = 0, 1 <br>
+                    while a < n: <br>
+                        print(a, end=' ') <br>
+                        a, b = b, a+b <br>
+                    print() <br>
+                </div> <br>
+
+                def fib2(n):   # return Fibonacci series up to n <br>
+                <div>
+                    result = [] <br>
+                    a, b = 0, 1 <br>
+                    while a < n: <br>
+                        result.append(a) <br>
+                        a, b = b, a+b <br>
+                    return result <br>
+                </div> <br>
+            </code>
+            <p>
+                Agora, entre no interpretador Python e importe esse módulo com o seguinte comando:
+            </p>
+            <code>
+                >>> import fibo <br>
+            </code>
+        </section> 
+        <!-- Fim - Section 5-->
+
+        <!-- Section 5-->
+        <section class="main-section" id="Classes">
+            <header>5. Classes</header>
+            <p>
+                Classes proporcionam uma forma de organizar dados e 
+                funcionalidades juntos. Criar uma nova classe cria um novo 
+                “tipo” de objeto, permitindo que novas “instâncias” desse 
+                tipo sejam produzidas. Cada instância da classe pode ter 
+                atributos anexados a ela, para manter seu estado. Instâncias 
+                da classe também podem ter métodos (definidos pela classe) 
+                para modificar seu estado.
+            </p>
+            <p>
+                Em comparação com outras linguagens de programação, o mecanismo 
+                de classes de Python introduz a programação orientada a objetos 
+                sem acrescentar muitas novidades de sintaxe ou semântica. É uma 
+                mistura de mecanismos equivalentes encontrados em C++ e Modula-3. 
+                As classes em Python oferecem todas as características 
+                tradicionais da programação orientada a objetos: o mecanismo 
+                de herança permite múltiplas classes base (herança múltipla), 
+                uma classe derivada pode sobrescrever quaisquer métodos de uma 
+                classe ancestral, e um método pode invocar outro método homônimo 
+                de uma classe ancestral. Objetos podem armazenar uma quantidade 
+                arbitrária de dados de qualquer tipo. Assim como acontece com 
+                os módulos, as classes fazem parte da natureza dinâmica de Python: 
+                são criadas em tempo de execução, e podem ser alteradas após sua 
+                criação.
+            </p>
+            <p>
+                Usando a terminologia de C++, todos os membros de uma 
+                classe (incluindo dados) são públicos (veja exceção abaixo 
+                Variáveis privadas), e todos as funções membro são virtuais. 
+                Como em Modula-3, não existem atalhos para referenciar membros 
+                do objeto de dentro dos seus métodos: o método (função definida 
+                em uma classe) é declarado com um primeiro argumento explícito 
+                representando o objeto (instância da classe), que é fornecido 
+                implicitamente pela chamada ao método. Como em Smalltalk, 
+                classes são objetos. Isso fornece uma semântica para importar 
+                e renomear. Ao contrário de C++ ou Modula-3, tipos pré-definidos 
+                podem ser utilizados como classes base para extensões por 
+                herança pelo usuário. Também, como em C++, a maioria dos 
+                operadores (aritméticos, indexação, etc) podem ser redefinidos 
+                por instâncias de classe.
+            </p>
+            <p>
+                (Na falta de uma terminologia universalmente aceita para 
+                falar sobre classes, ocasionalmente farei uso de termos 
+                comuns em Smalltalk ou C++. Eu usaria termos de Modula-3, 
+                já que sua semântica de orientação a objetos é mais próxima 
+                da de Python, mas creio que poucos leitores já ouviram falar 
+                dessa linguagem.)
+            </p>
+        </section> 
+
+        <!-- Section 5-->
+        <section class="main-section" id="Referencias">
+            <header>Referências</header>
+            <p>
+                <ul>
+                    <li><a href="https://docs.python.org/pt-br/3/tutorial/">Documentação Python.</a></li>
+                </ul>
+            </p>
+        </section> 
+        <!-- Fim - Section 5-->
+
+        <!-- NO MÍNIMO 5 SECTIONS-->
+    </main>
+  </body>
+</html>
