@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    background-color: aliceblue;
+}
+
+/* Configuração da NAV-BAR*/
+
+#header-img {
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+}
+
+#nav-bar {
+    display: grid;
+    position: fixed;
+    margin-top: 0;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(207, 207, 255);
+    padding: 10px;
+}
+
+.list-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.list-item {
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.list-item:hover {
+    background-color: aquamarine;
+    border: 2px solid;
+}
+
+/* Fim da Configuração da NAV-BAR*/
+
+main {
+    display: grid;
+    grid-template-rows: min-content min-content;
+}
+
+/* FORM CONFIG */
+
+#form {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    width: 100%;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+#form input, #form button {
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+#form input {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    width: 40%;
+}
+
+#submit {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: aquamarine;
+}
+
+#submit:hover {
+    background-color: rgb(106, 206, 172);
+}
+
+/* CONTENT CONFIG */
+section {
+    padding: 30px 100px;
+    margin-top: 50px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: min-content;
+}
+
+main {
+    margin: 100px auto;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+#imagem-produto {
+    width: 50%;
+    margin: 10px;
+    align-self: center;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.center {
+    display: flex;
+    padding-left: auto;
+    padding-right: auto;
+    justify-content: center;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.preco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 33%;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.preco h6 {
+    text-align: center;
+    font-size: x-large;
+}
+
+.preco p {
+    text-indent: 0;
+    text-align: center;
+}
+
+.video {
+    padding: 30px;
+}
+
+@media (max-width: 750px) {
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+}

@@ -2,20 +2,86 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title> <!-- TITULO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="styles.css">
+    <title></title> <!-- TITULO -->
   </head>
   <body>
-    <!-- BODY TAG -->
-    <nav id="navbar">
-        <!-- NAV TAG -->
-        <header>
-            <!-- HEADER TAG -->
-        </header>    
-    </nav>
+    <!-- BODY TAG -->        
+    <header id="header">
+        <!-- HEADER TAG -->        
+        <nav id="nav-bar">
+            <img src="https://cdn-icons-png.flaticon.com/512/5521/5521069.png" 
+            alt="logo" 
+            id="header-img"> <!-- Logo -->
+            <ul class="list-links">
+                <li class="list-item"><a href="#section-1" class="nav-link">Apresentação</a></li> <!-- Link de seção - Seção 1-->
+                <li class="list-item"><a href="#section-2" class="nav-link">Benefícios</a></li> <!-- Link de seção - Seção 2-->
+                <li class="list-item"><a href="#section-3" class="nav-link">Preços</a></li> <!-- Link de seção - Seção 3-->
+            </ul>
+        </nav>
+    </header> 
+
     <main id="main-doc">
         <!-- MAIN TAG -->
+        <form action="https://www.freecodecamp.com/email-submit" id="form" method="post">
+            <input type="email" 
+            id="email" 
+            placeholder="digite seu email"
+            required>
+            <input type="submit" name="sumit" id="submit">
+        </form>
+        <section id="section-1">
+            <h2 class="title-section">APRESENTAÇÃO</h2>
+            <div class="center" id="imagem">
+                <img src="http://g20brasil.com.br/wp-content/uploads/2016/06/-lampadas-LED-sustentabilidade.jpg" 
+                alt="imagem de uma lampada"
+                id="imagem-produto">
+            </div>
+            <div id="conteudo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae impedit obcaecati architecto! Aspernatur dolorum natus perspiciatis vero nam iusto reprehenderit quasi vel, voluptatem, dolore explicabo fugiat ipsam vitae tempora? Nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure magni, eaque iste harum odio impedit molestias vero exercitationem officiis maxime, obcaecati esse, neque nostrum voluptates. Vero ea vel architecto nihil.</p>
+            </div>
+        </section>
+        <section id="section-2">
+            <h2 class="title-section">BENEFÍCIOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae impedit obcaecati architecto! Aspernatur dolorum natus perspiciatis vero nam iusto reprehenderit quasi vel, voluptatem, dolore explicabo fugiat ipsam vitae tempora? Nesciunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae impedit obcaecati architecto! Aspernatur dolorum natus perspiciatis vero nam iusto reprehenderit quasi vel, voluptatem, dolore explicabo fugiat ipsam vitae tempora? Nesciunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae impedit obcaecati architecto! Aspernatur dolorum natus perspiciatis vero nam iusto reprehenderit quasi vel, voluptatem, dolore explicabo fugiat ipsam vitae tempora? Nesciunt.</p>
+        
+            <div class="video center">
+                <iframe 
+                    src="https://www.youtube.com/watch?v=lz-dryAsJx8&ab_channel=MundodaDan%C3%A7a" 
+                    frameborder="0"
+                    width="700"
+                    height="355">
+                </iframe>
+            </div>
+        </section>
+        <section id="section-3">
+            <h2 class="title-section">PREÇOS</h2>
+            <div class="flex-box">
+                <div class="preco">
+                    <div>
+                        <h6>R$ 0,00</h6>
+                        <p>Por nenhuma unidade</p>
+                    </div>
+                </div>
+                <div class="preco">
+                    <div>
+                        <h6>R$ 10,00</h6>
+                        <p>Por dez unidades</p>
+                    </div>
+                </div>
+                <div class="preco">
+                    <div>
+                        <h6>R$ 100,00</h6>
+                        <p>Por cem unidades</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <video src=""></video> <!-- Video do Produto -->
     </main>
   </body>
 </html>
