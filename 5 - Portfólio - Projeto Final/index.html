@@ -18,9 +18,9 @@
                 <span class="text-logo">Portfólio</span>
             </div>
             <ul>
-                <a class="sec-link" href="#"><li>Seja bem vindo</li></a>
-                <a class="sec-link" href="#"><li>Projetos</li></a>
-                <a class="sec-link" href="#"><li>Contatos</li></a>                
+                <a class="sec-link" href="#welcome-section"><li>Seja bem vindo</li></a>
+                <a class="sec-link" href="#projects"><li>Projetos</li></a>
+                <a class="sec-link" href="#contatos"><li>Contatos</li></a>                
             </ul>
         </nav>
     </header>
@@ -57,11 +57,11 @@
         <section id="projects" class="section">
             <h1 class="title-section">Projetos Desenvolvidos</h1>            
             
-            <ul class="project-list">
+            <ul class="project-list" id="project-tile">
                 <li class="project-conteiner">
                     <a href="https://github.com/leonhardc/Projetos-Django/tree/master/ProjetoAgenda"
                     class="project-link">
-                        <h5>Agenda</h5> <!-- Titulo do projeto -->
+                        <h5 class="project-tile">Agenda</h5> <!-- Titulo do projeto -->
                         <div class="project-image">
                             <!-- Background Image -->
                         </div> <!-- Imagem do projeto -->
@@ -74,52 +74,91 @@
                         </div> <!-- resumo do projeto -->
                     </a>
                 </li> <!-- Agenda -->
+                
                 <li class="project-conteiner">
-                    <a href="https://github.com/leonhardc/Projetos-Django/tree/master/ProjetoAgenda"
+                    <a href="https://github.com/leonhardc/Projetos-Django/tree/master/Projeto-Blog"
                     class="project-link">
-                        <h5>Agenda</h5> <!-- Titulo do projeto -->
+                        <h5 class="project-tile">Blog</h5> <!-- Titulo do projeto -->
                         <div class="project-image">
-                            <!-- <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" 
-                                 alt=""
-                                 class="image-project"> -->
+                            <!-- Background Image -->
                         </div> <!-- Imagem do projeto -->
                         <div class="project-abstract">
                             <p class="abstract">
-                                Projeto de uma agenda simples, desenvolvido
+                                Projeto de um Blog simples, desenvolvido
                                 em python, usando o framework Django e HTML, CSS e
                                 JavaScript
                             </p>
                         </div> <!-- resumo do projeto -->
                     </a>
                 </li> <!-- Blog -->
+                
                 <li class="project-conteiner">
-                    <a href="https://github.com/leonhardc/Projetos-Django/tree/master/Projeto-Blog"
+                    <a href="https://github.com/leonhardc/Inteligencia-Computacional---Trabalhos"
                     class="project-link">
-                        <h5>Blog</h5> <!-- Titulo do projeto -->
+                        <h5 class="project-tile">Scripts IC</h5> <!-- Titulo do projeto -->
                         <div class="project-image">
                             <!-- Background Image -->
                         </div> <!-- Imagem do projeto -->
                         <div class="project-abstract">
                             <p class="abstract">
-                                Projeto de uma agenda simples, desenvolvido
-                                em python, usando o framework Django e HTML, CSS e
-                                JavaScript
+                                Projetos desenvolvidos em MatLab durante a Disciplina de 
+                                Inteligencia Computacional
                             </p>
                         </div> <!-- resumo do projeto -->
                     </a>
-                </li>
+                </li> <!-- Scripts IC -->
+
+                <li class="project-conteiner">
+                    <a href="https://github.com/leonhardc/projetos-datascience/tree/master/Projetos/Jupyter_Notebook/Analise_de_Sentimentos_em_Dados_Textuais"
+                    class="project-link">
+                        <h5 class="project-tile">Análise Sentimental</h5> <!-- Titulo do projeto -->
+                        <div class="project-image">
+                            <!-- Background Image -->
+                        </div> <!-- Imagem do projeto -->
+                        <div class="project-abstract">
+                            <p class="abstract">
+                                Projeto Simples de Análise Sentimental usando nltk, 
+                                slearn e outros módulos Python.
+                            </p>
+                        </div> <!-- resumo do projeto -->
+                    </a>
+                </li> <!-- Scripts IC -->
+                
 
                 
             </ul>
             
         </section>
         <section id="contatos" class="section">
-            <a id="profile-link" href="https://www.freecodecamp.org/portuguese/fcc260a7665-87e9-4660-949a-145441b66916">
-                <div>
-                    <h3>Visite meu perfil no FreeCodeCamp</h3>
-                </div>
+            <a id="profile-link" 
+               href="https://www.freecodecamp.org/portuguese/fcc260a7665-87e9-4660-949a-145441b66916"
+               target="_blank">
+                <span id="free-code-camp-perfil">Meu perfil no FreeCodeCamp</span>
             </a>
+            <span id="inter">ou visite minhas redes outras sociais</span>
+            <div class="social-icons">
+                <a class="social-link" href="https://www.facebook.com/leonardo.rodriguesdacosta.3/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social-link" href="https://twitter.com/Leonard44259772">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social-link" href="https://www.instagram.com/_leonhardc_/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/leonardorcost/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/leonardorcost/">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </section>
     </main>
+    <footer>
+        <span>Feito por: Leonardo Rodrigues da Costa </span>
+        <br>
+        <span>Graduando em Engenharia de Computação</span>
+    </footer> <!-- footer -->
 </body>
 </html>
