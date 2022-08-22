@@ -3,188 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
+    <link rel="stylesheet" href="styles.css">
     <title>Portfólio | Leonardo</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <img 
-                    src="img/logo.png" 
-                    alt="Logo"
-                    id="logo">
+        <!-- Onde irá ficar a navbar -->
+        <nav id="navbar">
+            <div id="conteiner-logo">
+                <span class="text-logo">Portfólio</span>
             </div>
             <ul>
-                <li><a href="#section-1">Sobre</a></li>
-                <li><a href="#section-2">Projetos</a></li>
-                <li><a href="#section-3">Contatos</a></li>
+                <a class="sec-link" href="#"><li>Seja bem vindo</li></a>
+                <a class="sec-link" href="#"><li>Projetos</li></a>
+                <a class="sec-link" href="#"><li>Contatos</li></a>                
             </ul>
         </nav>
-    </header> <!-- header -->
+    </header>
+    
     <main>
-        <section id="section-1">
-            <h2>Um pouco sobre mim ... </h2>
-            <div class="conteudo-secao-1">
-                <div class="perfil">
-                    <img src="img/perfil.jpg" alt="perfil image" id="perfil-img">
-                </div>
-                <p>
-                    Olá, eu me chamo Leonardo, sou graduando em Engenharia de Computação
-                    pela Universidade Federal do Ceará, campus Sobral. Amo tecnologia e o
-                    potencial que ela pode trazer para a humanidade em todas as eferas do 
-                    conhecimento. Gosto de aprender, sempre gostei. Coisas novas me encantam
-                    e a Computação como um todo se renova todos os dias, novos algorítmos
-                    são criados, novas ferramentas, novos frameworks, enfim, novas maneiras de
-                    pensar.  
-                </p>
-                <p>
-                    Atualmente o foco dos meus estudos está voltado para desenvolvimento
-                    Python, inclusive com o framework Django, e claro, com o intuito de complementar
-                    meus conhecimentos sobre essa ferramenta, estudo HTML e CSS nos cursos da FreCodeCamp. 
-                </p>
-                <p>
-                    Vale ressaltar que uma das áreas de estudos que sempre me chamou a atenção e que hoje
-                    também faz parte dos meus objetivos é o estudo de Inteligencia Artificial. Hoje, como academico
-                    da Computação e como desenvolvedor, me encotro nos estudos também em Data Science e é nessa área
-                    que pretendo desenvolver meu projeto de conclusão de curso.
-                </p>
-            </div>
+        <section id="welcome-section" class="section">            
+            <h1 id="welcome-title" class="title-section">Seja bem vindo</h1>
+            <p>
+                Olá, eu me chamo Leonardo, sou graduando em Engenharia de 
+                Computação pela Universidade Federal do Ceará, campus Sobral. 
+                Amo tecnologia e o potencial que ela pode trazer para a 
+                humanidade em todas as esferas do conhecimento. Gosto de 
+                aprender, sempre gostei. Coisas novas me encantam e a Computação 
+                como um todo se renova todos os dias, novos algorítmos são 
+                criados, novas ferramentas, novos frameworks, enfim, novas 
+                maneiras de pensar.
+            </p>
+            <p>
+                Atualmente o foco dos meus estudos está voltado para 
+                desenvolvimento Python, inclusive com o framework Django, 
+                e claro, com o intuito de complementar meus conhecimentos 
+                sobre essa ferramenta, estudo HTML e CSS nos cursos da 
+                FreCodeCamp.
+            </p>
+            <p>
+                Vale ressaltar que uma das áreas de estudos que sempre 
+                me chamou a atenção e que hoje também faz parte dos meus 
+                objetivos é o estudo de Inteligencia Artificial. Hoje, como 
+                academico da Computação e como desenvolvedor, me encotro 
+                nos estudos também em Data Science e é nessa área que pretendo 
+                desenvolver meu projeto de conclusão de curso.
+            </p>
         </section>
-        <section id="section-2">
-            <h2>Projetos desenvolvidos</h2>
-            <div class="conteudo-secao-2">
-                <div class="project-div">
-                    <a href="https://github.com/leonhardc">
-                        <div class="project-content">
-                            <div class="project-imagem">
-                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
-                                alt="">
-                            </div>
-                            <div class="project-descricao">
-                                <h5>Titulo do Projeto</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Non, dolor velit animi 
-                                    explicabo inventore reprehenderit deleniti</p>
-                            </div>
-                        </div>
+        <section id="projects" class="section">
+            <h1 class="title-section">Projetos Desenvolvidos</h1>            
+            
+            <ul class="project-list">
+                <li class="project-conteiner">
+                    <a href="https://github.com/leonhardc/Projetos-Django/tree/master/ProjetoAgenda"
+                    class="project-link">
+                        <h5>Agenda</h5> <!-- Titulo do projeto -->
+                        <div class="project-image">
+                            <!-- Background Image -->
+                        </div> <!-- Imagem do projeto -->
+                        <div class="project-abstract">
+                            <p class="abstract">
+                                Projeto de uma agenda simples, desenvolvido
+                                em python, usando o framework Django e HTML, CSS e
+                                JavaScript
+                            </p>
+                        </div> <!-- resumo do projeto -->
                     </a>
-                </div>
-                <div class="project-div">
-                    <a href="https://github.com/leonhardc">
-                        <div class="project-content">
-                            <div class="project-imagem">
-                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
-                                alt="">
-                            </div>
-                            <div class="project-descricao">
-                                <h5>Titulo do Projeto</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Non, dolor velit animi 
-                                    explicabo inventore reprehenderit deleniti</p>
-                            </div>
-                        </div>
+                </li> <!-- Agenda -->
+                <li class="project-conteiner">
+                    <a href="https://github.com/leonhardc/Projetos-Django/tree/master/ProjetoAgenda"
+                    class="project-link">
+                        <h5>Agenda</h5> <!-- Titulo do projeto -->
+                        <div class="project-image">
+                            <!-- <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" 
+                                 alt=""
+                                 class="image-project"> -->
+                        </div> <!-- Imagem do projeto -->
+                        <div class="project-abstract">
+                            <p class="abstract">
+                                Projeto de uma agenda simples, desenvolvido
+                                em python, usando o framework Django e HTML, CSS e
+                                JavaScript
+                            </p>
+                        </div> <!-- resumo do projeto -->
                     </a>
-                </div>
-                <div class="project-div">
-                    <a href="https://github.com/leonhardc">
-                        <div class="project-content">
-                            <div class="project-imagem">
-                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
-                                alt="">
-                            </div>
-                            <div class="project-descricao">
-                                <h5>Titulo do Projeto</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Non, dolor velit animi 
-                                    explicabo inventore reprehenderit deleniti</p>
-                            </div>
-                        </div>
+                </li> <!-- Blog -->
+                <li class="project-conteiner">
+                    <a href="https://github.com/leonhardc/Projetos-Django/tree/master/Projeto-Blog"
+                    class="project-link">
+                        <h5>Blog</h5> <!-- Titulo do projeto -->
+                        <div class="project-image">
+                            <!-- Background Image -->
+                        </div> <!-- Imagem do projeto -->
+                        <div class="project-abstract">
+                            <p class="abstract">
+                                Projeto de uma agenda simples, desenvolvido
+                                em python, usando o framework Django e HTML, CSS e
+                                JavaScript
+                            </p>
+                        </div> <!-- resumo do projeto -->
                     </a>
-                </div>
-                <div class="project-div">
-                    <a href="https://github.com/leonhardc">
-                        <div class="project-content">
-                            <div class="project-imagem">
-                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
-                                alt="">
-                            </div>
-                            <div class="project-descricao">
-                                <h5>Titulo do Projeto</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Non, dolor velit animi 
-                                    explicabo inventore reprehenderit deleniti</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-div">
-                    <a href="https://github.com/leonhardc">
-                        <div class="project-content">
-                            <div class="project-imagem">
-                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
-                                alt="">
-                            </div>
-                            <div class="project-descricao">
-                                <h5>Titulo do Projeto</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Non, dolor velit animi 
-                                    explicabo inventore reprehenderit deleniti</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-div">
-                    <a href="https://github.com/leonhardc">
-                        <div class="project-content">
-                            <div class="project-imagem">
-                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
-                                alt="">
-                            </div>
-                            <div class="project-descricao">
-                                <h5>Titulo do Projeto</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. Non, dolor velit animi 
-                                    explicabo inventore reprehenderit deleniti</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>                
-            </div>
+                </li>
+
+                
+            </ul>
+            
         </section>
-        <section id="section-3">
-            <div class="conteudo-secao-3 social-icons">
-                <a href="https://www.facebook.com/leonardo.rodriguesdacosta.3/">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/Leonard44259772">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/_leonhardc_/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/leonardorcost/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/leonardorcost/">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
+        <section id="contatos" class="section">
+            <a id="profile-link" href="https://www.freecodecamp.org/portuguese/fcc260a7665-87e9-4660-949a-145441b66916">
+                <div>
+                    <h3>Visite meu perfil no FreeCodeCamp</h3>
+                </div>
+            </a>
         </section>
-    </main> <!-- main -->
-    <footer>
-        <span>Feito por: Leonardo Rodrigues da Costa </span>
-        <span>Graduando em Engenharia de Computação</span>
-    </footer> <!-- footer -->
+    </main>
 </body>
 </html>

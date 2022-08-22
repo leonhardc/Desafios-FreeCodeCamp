@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <title>Portfólio | Leonardo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img 
+                    src="img/logo.png" 
+                    alt="Logo"
+                    id="logo">
+            </div>
+            <ul>
+                <li><a href="#section-1">Sobre</a></li>
+                <li><a href="#section-2">Projetos</a></li>
+                <li><a href="#section-3">Contatos</a></li>
+            </ul>
+        </nav>
+    </header> <!-- header -->
+    <main>
+        <section id="section-1">
+            <h2>Um pouco sobre mim ... </h2>
+            <div class="conteudo-secao-1">
+                <div class="perfil">
+                    <img src="img/perfil.jpg" alt="perfil image" id="perfil-img">
+                </div>
+                <p>
+                    Olá, eu me chamo Leonardo, sou graduando em Engenharia de Computação
+                    pela Universidade Federal do Ceará, campus Sobral. Amo tecnologia e o
+                    potencial que ela pode trazer para a humanidade em todas as eferas do 
+                    conhecimento. Gosto de aprender, sempre gostei. Coisas novas me encantam
+                    e a Computação como um todo se renova todos os dias, novos algorítmos
+                    são criados, novas ferramentas, novos frameworks, enfim, novas maneiras de
+                    pensar.  
+                </p>
+                <p>
+                    Atualmente o foco dos meus estudos está voltado para desenvolvimento
+                    Python, inclusive com o framework Django, e claro, com o intuito de complementar
+                    meus conhecimentos sobre essa ferramenta, estudo HTML e CSS nos cursos da FreCodeCamp. 
+                </p>
+                <p>
+                    Vale ressaltar que uma das áreas de estudos que sempre me chamou a atenção e que hoje
+                    também faz parte dos meus objetivos é o estudo de Inteligencia Artificial. Hoje, como academico
+                    da Computação e como desenvolvedor, me encotro nos estudos também em Data Science e é nessa área
+                    que pretendo desenvolver meu projeto de conclusão de curso.
+                </p>
+            </div>
+        </section>
+        <section id="section-2">
+            <h2>Projetos desenvolvidos</h2>
+            <div class="conteudo-secao-2">
+                <div class="project-div">
+                    <a href="https://github.com/leonhardc/blog-django">
+                        <div class="project-content">
+                            <div class="project-imagem">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
+                                alt="">
+                            </div>
+                            <div class="project-descricao">
+                                <h5>Blog Django</h5>
+                                <p>
+                                    Implementação de um Pequeno Blog, desenvolvido com
+                                    o framework Django e implementado em Python, HTML,CSS e
+                                    JavaScript.     
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-div">
+                    <a href="https://github.com/leonhardc/Projetos-Django/tree/master/ProjetoAgenda">
+                        <div class="project-content">
+                            <div class="project-imagem">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
+                                alt="">
+                            </div>
+                            <div class="project-descricao">
+                                <h5>Agenda</h5>
+                                <p>
+                                    Implementação de uma Agenda, desenvolvida com
+                                    o framework Django e implementado em Python, HTML,CSS e
+                                    JavaScript.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-div">
+                    <a href="https://github.com/leonhardc">
+                        <div class="project-content">
+                            <div class="project-imagem">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
+                                alt="">
+                            </div>
+                            <div class="project-descricao">
+                                <h5>Inteligencia Computacional</h5>
+                                <p>
+                                    Scripts da disciplina de Inteligencia computacional
+                                    desenvolvidos em MatLab. Esse projeto contempla todos
+                                    os trabalhos realizados na disciplina.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="project-div">
+                    <a href="https://github.com/leonhardc">
+                        <div class="project-content">
+                            <div class="project-imagem">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
+                                alt="">
+                            </div>
+                            <div class="project-descricao">
+                                <h5>Titulo do Projeto</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Non, dolor velit animi 
+                                    explicabo inventore reprehenderit deleniti</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-div">
+                    <a href="https://github.com/leonhardc">
+                        <div class="project-content">
+                            <div class="project-imagem">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
+                                alt="">
+                            </div>
+                            <div class="project-descricao">
+                                <h5>Titulo do Projeto</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Non, dolor velit animi 
+                                    explicabo inventore reprehenderit deleniti</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-div">
+                    <a href="https://github.com/leonhardc">
+                        <div class="project-content">
+                            <div class="project-imagem">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" 
+                                alt="">
+                            </div>
+                            <div class="project-descricao">
+                                <h5>Titulo do Projeto</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Non, dolor velit animi 
+                                    explicabo inventore reprehenderit deleniti</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>                 -->
+            </div>
+        </section>
+        <section id="section-3">
+            <div class="conteudo-secao-3 social-icons">
+                <a class="social-link" href="https://www.facebook.com/leonardo.rodriguesdacosta.3/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social-link" href="https://twitter.com/Leonard44259772">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social-link" href="https://www.instagram.com/_leonhardc_/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/leonardorcost/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/leonardorcost/">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+    </main> <!-- main -->
+    <footer>
+        <span>Feito por: Leonardo Rodrigues da Costa </span>
+        <br>
+        <span>Graduando em Engenharia de Computação</span>
+    </footer> <!-- footer -->
+</body>
+</html>
